@@ -44,5 +44,6 @@ Generated in `risk/outputs/`:
 
 ### How to run (local)
 ```bash
+pip install -r requirements.txt
 python src/generate_data.py
 python risk/src/risk_scoring.py
