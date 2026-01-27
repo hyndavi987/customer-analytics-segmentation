@@ -19,3 +19,30 @@ churn indicators, and high-value customer segments. Outputs are Power BI-ready t
 pip install -r requirements.txt
 python src/generate_data.py
 python src/customer_segmentation.py
+
+
+---
+
+## Project 2: Financial Transaction Risk Analysis (SQL, Python)
+
+### Overview
+This project analyzes financial transaction data to identify anomalies and potential fraud patterns.
+It applies rule-based risk indicators and scoring to flag suspicious transactions and high-risk customers
+for further investigation.
+
+### What this project does
+- Analyzes transaction behavior by customer, date, category, and amount
+- Detects anomalies using customer-level spending patterns and velocity checks
+- Applies explainable, rule-based risk scoring
+- Produces investigation-ready outputs for risk and fraud teams
+
+### Outputs
+Generated in `risk/outputs/`:
+- `transaction_risk_flags.csv` – transaction-level risk indicators
+- `customer_risk_summary.csv` – aggregated customer risk profiles
+- `top_suspicious_transactions.csv` – prioritized investigation list
+
+### How to run (local)
+```bash
+python src/generate_data.py
+python risk/src/risk_scoring.py
