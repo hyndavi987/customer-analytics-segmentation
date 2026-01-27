@@ -37,6 +37,7 @@ for further investigation.
 - Produces investigation-ready outputs for risk and fraud teams
 
 ### Outputs
+> Note: Full datasets are generated locally. Sample outputs are included in the `samples/` folder for demonstration.
 Generated in `risk/outputs/`:
 - `transaction_risk_flags.csv` – transaction-level risk indicators
 - `customer_risk_summary.csv` – aggregated customer risk profiles
