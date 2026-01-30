@@ -42,25 +42,43 @@ python src/customer_segmentation.py
 
 ---
 
+---
+
 ## Project 2: Financial Transaction Risk Analysis (SQL, Python)
 
 ### Overview
-This project analyzes financial transaction data to identify anomalies and potential fraud patterns.
-It applies rule-based risk indicators and scoring to flag suspicious transactions and high-risk customers
-for further investigation.
+This project analyzes financial transaction data to identify anomalous activity and potential fraud patterns using explainable, rule-based risk indicators.
 
 ### What this project does
-- Analyzes transaction behavior by customer, date, category, and amount
-- Detects anomalies using customer-level spending patterns and velocity checks
-- Applies explainable, rule-based risk scoring
+- Analyzes transaction behavior by customer, category, amount, and time
+- Flags high-risk transactions using velocity checks and statistical thresholds
+- Aggregates customer-level risk profiles for investigation
 - Produces investigation-ready outputs for risk and fraud teams
 
+### Tech Stack
+- Python (Pandas, NumPy)
+- SQL-style aggregations
+- Power BI (dashboard layer)
+
 ### Outputs
-> Note: Full datasets are generated locally. Sample outputs are included in the `samples/` folder for demonstration.
 Generated in `risk/outputs/`:
 - `transaction_risk_flags.csv` – transaction-level risk indicators
-- `customer_risk_summary.csv` – aggregated customer risk profiles
+- `customer_risk_summary.csv` – customer risk profiles
 - `top_suspicious_transactions.csv` – prioritized investigation list
+
+### Dashboard Outputs (Power BI)
+
+**Risk Analysis Overview**  
+![Risk Overview](assets/project2_risk_analysis/risk_dashboard_overview.png)  
+_Overview of total transactions vs high-risk transactions._
+
+**High-Risk Transactions by Category**  
+![High Risk by Category](assets/project2_risk_analysis/high_risk_transactions_by_category.png)  
+_Pharmacy and Grocery show the highest concentration of high-risk transactions._
+
+**Top Suspicious Transactions**  
+![Top Suspicious Transactions](assets/project2_risk_analysis/top_suspicious_transactions_table.png)  
+_Prioritized list of transactions requiring manual investigation._
 
 ### How to run (local)
 ```bash
