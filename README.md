@@ -14,6 +14,25 @@ churn indicators, and high-value customer segments. Outputs are Power BI-ready t
 - Python: Pandas, NumPy
 - Power BI: dashboard layer (connect to processed outputs)
 
+- ## Power BI Dashboard
+
+This Power BI dashboard visualizes insights generated from the customer analytics pipeline in this repository.  
+Processed CSV outputs from Python are directly consumed in Power BI to enable business-focused reporting.
+
+### Dashboard Highlights
+- **Customer Segment Distribution** – Breakdown of customers across segments such as Regular, VIP, Loyal, At-Risk, and Churned.
+- **Average Customer Lifetime Value (CLV)** – Overall average CLV across the customer base.
+- **Total Customers KPI** – Total number of unique customers analyzed.
+- **Monthly Active Customers Trend** – Engagement trend over time.
+- **Revenue by Customer Segment** – Comparison of revenue contribution across customer segments.
+
+### Dashboard Preview
+
+![Customer Analytics Dashboard](assets/powerbi_customer_analytics_dashboard.png)
+
+![Customer Segment Distribution](assets/powerbi_customer_segment_distribution.png)
+
+
 ## How to run (local)
 ```bash
 pip install -r requirements.txt
